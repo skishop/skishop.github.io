@@ -1,0 +1,6 @@
+# Aptana project file
+.project
+
+# Intellij project files
+.idea
+*.iml
