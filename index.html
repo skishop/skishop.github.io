@@ -1,307 +1,203 @@
-<!DOCTYPE html>
-<html lang="fr">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="Skishop Lelex, location de matériel de ski">
-        <meta name="author" content="Skishop Lelex">
-
-        <title>Skishop Lelex</title>
-
-        <!-- Bootstrap core CSS -->
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-
-        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-        <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-        <![endif]-->
-
-        <!-- Favicons -->
-        <link rel="apple-touch-icon" sizes="144x144" href="images/ico/apple-touch-icon-144.png">
-        <link rel="shortcut icon" href="images/ico/favicon.ico">
-
-        <!-- Custom styles for this template -->
-        <link href="css/carousel.css" rel="stylesheet">
-    </head>
-    <!-- NAVBAR
-    ================================================== -->
-    <body>
-        <div id="fb-root"></div>
-        <script>
-            ( function(d, s, id) {
-                    var js, fjs = d.getElementsByTagName(s)[0];
-                    if (d.getElementById(id))
-                        return;
-                    js = d.createElement(s);
-                    js.id = id;
-                    js.src = "//connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v2.0";
-                    fjs.parentNode.insertBefore(js, fjs);
-                }(document, 'script', 'facebook-jssdk'));
-        </script>
-        <div class="navbar-wrapper">
+---
+layout: main
+title: Accueil
+group: navigation
+---
+<!-- Carousel
+================================================== -->
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+        <div class="item active">
+            <img data-src="holder.js/900x500/auto/#777:#7a7a7a/text:First slide" alt="First slide">
             <div class="container">
-
-                <div class="navbar navbar-inverse navbar-static-top" role="navigation">
-                    <div class="container-fluid">
-                        <div class="navbar-header">
-                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                                <span class="sr-only">Basculer la navigation</span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                            </button>
-                            <a class="navbar-brand" href="#">Skishop Lelex</a>
-                        </div>
-                        <div class="navbar-collapse collapse">
-                            <ul class="nav navbar-nav">
-                                <li class="active">
-                                    <a href="#">Accueil</a>
-                                </li>
-                                <li>
-                                    <a href="#prices">Tarifs</a>
-                                </li>
-                                <li>
-                                    <a href="#partners">Partenaires / Matériel</a>
-                                </li>
-                                <li>
-                                    <a href="#summer">Eté</a>
-                                </li>
-                                <li>
-                                    <a href="#contact">Contact / Accès</a>
-                                </li>
-                            </ul>
-                            <ul class="nav navbar-nav navbar-right">
-                                <li>
-                                    <a href="http://monts-jura.com">Domaine Monts Jura</a>
-                                </li>
-                                <li class="dropdown">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Language <b class="caret"></b></a>
-                                    <ul class="dropdown-menu">
-                                        <li>
-                                            <a href="#">FR</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">EN</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+                <div class="carousel-caption">
+                    <h1>Skishop Lélex, location de matériel de ski au pied des pistes</h1>
+                    <p>
+                        SkiShop Lélex, c'est votre magasin de sport des stations Monts Jura&nbsp;!
+                    </p>
+                    <p>
+                        Avec <strong>96,8% de satisfaction client</strong> (<a href="http://www.skimium.fr/store/ski-shop-lelex-167#shop-tab-satisfaction">données skimium.com</a>), Skishop vous accueille dans la bonne humeur et le professionalisme pour vous offrir une expérience de glisse toujours plus exceptionelle.
+                    </p>
+                    <p>
+                        <a class="btn btn-lg btn-primary" href="#featurette-location" role="button">En savoir plus</a>
+                    </p>
                 </div>
-
             </div>
         </div>
-
-        <!-- Carousel
-        ================================================== -->
-        <div id="myCarousel" class="carousel slide" data-ride="carousel">
-            <!-- Indicators -->
-            <ol class="carousel-indicators">
-                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                <li data-target="#myCarousel" data-slide-to="1"></li>
-                <li data-target="#myCarousel" data-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner">
-                <div class="item active">
-                    <img data-src="holder.js/900x500/auto/#777:#7a7a7a/text:First slide" alt="First slide">
-                    <div class="container">
-                        <div class="carousel-caption">
-                            <h1>Skishop Lélex, location de matériel de ski au pied des pistes</h1>
-                            <p>
-                                SkiShop Lélex, c'est votre magasin de sport des stations Monts Jura&nbsp;!
-                            </p>
-                            <p>
-                                Avec <strong>96,8% de satisfaction client</strong> (<a href="http://www.skimium.fr/store/ski-shop-lelex-167#shop-tab-satisfaction">données skimium.com</a>), Skishop vous accueille dans la bonne humeur et le professionalisme pour vous offrir une expérience de glisse toujours plus exceptionelle.
-                            </p>
-                            <p>
-                                <a class="btn btn-lg btn-primary" href="#featurette-location" role="button">En savoir plus</a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <img data-src="holder.js/900x500/auto/#666:#6a6a6a/text:Second slide" alt="Second slide">
-                    <div class="container">
-                        <div class="carousel-caption">
-                            <h1>Le meilleur de la glisse et du sport de montagne</h1>
-                            <p>
-                                Skishop choisi pour vous les meilleurs équipements dans toutes les disciplines, et vous propose de découvrir de nouvelles sensations de glisse.
-                            </p>
-                            <p>
-                                <a class="btn btn-lg btn-primary" href="#featurette-partner" role="button">En savoir plus</a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <img data-src="holder.js/900x500/auto/#555:#5a5a5a/text:Third slide" alt="Third slide">
-                    <div class="container">
-                        <div class="carousel-caption">
-                            <h1>Skishop est partenaire Skimium.com</h1>
-                            <p>
-                                Skimium.com (groupe Decathlon) vous permet de reserver votre matériel en ligne, tout en profitant de tarifs exclusifs.
-                            </p>
-                            <p>
-                                Moins de perte de temps, plus de plaisir &nbsp;!
-                            </p>
-                            <p>
-                                <a class="btn btn-lg btn-default" href="#featurette-skimium" role="button">En savoir plus</a><a class="btn btn-lg btn-primary" href="http://www.skimium.fr/store/ski-shop-lelex-167" role="button">Réservez dés maintenant sur Skimium.com</a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
-            <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
-        </div><!-- /.carousel -->
-
-        <!-- Marketing messaging and featurettes
-        ================================================== -->
-        <!-- Wrap the rest of the page in another container to center all the content. -->
-
-        <div class="container marketing">
-
-            <!-- Four columns of text below the carousel -->
-            <div class="row">
-                <div class="col-lg-3">
-                    <img class="img-circle" src="images/lelex.jpg" alt="Generic placeholder image">
-                    <h2>Au coeur de la station</h2>
+        <div class="item">
+            <img data-src="holder.js/900x500/auto/#666:#6a6a6a/text:Second slide" alt="Second slide">
+            <div class="container">
+                <div class="carousel-caption">
+                    <h1>Le meilleur de la glisse et du sport de montagne</h1>
                     <p>
-                        Le magasin se situe à 50m de la télécabine de La Catheline et de l'office de tourisme, au coeur du village.
+                        Skishop choisi pour vous les meilleurs équipements dans toutes les disciplines, et vous propose de découvrir de nouvelles sensations de glisse.
                     </p>
                     <p>
-                        <a class="btn btn-default" href="#featurette-location" role="button">En savoir plus &raquo;</a>
-                    </p>
-                </div><!-- /.col-lg-3 -->
-                <div class="col-lg-3">
-                    <img class="img-circle" src="images/coreupt-ski.jpg" alt="Generic placeholder image">
-                    <h2>Du matériel de pointe</h2>
-                    <p>
-                        Skishop est partenaire / revendeur de nombreux grands noms de la glisse, et vous propose également de découvrir de nouvelles disciplines telles que le snowscoot ou le VTT de descente.
-                    </p>
-                    <p>
-                        <a class="btn btn-default" href="#featurette-partner" role="button">En savoir plus &raquo;</a>
-                    </p>
-                </div><!-- /.col-lg-3 -->
-                <div class="col-lg-3">
-                    <img class="img-rounded" src="images/skimium-small.png" alt="Logo Skimium">
-                    <h2>Partenaire Skimium.com</h2>
-                    <p>
-                        Un blabla un peu différent du détail qu'on retrouvera plus bas.
-                    </p>
-                    <p>
-                        <a class="btn btn-default" href="#featurette-skimium" role="button">En savoir plus &raquo;</a>
-                    </p>
-                </div><!-- /.col-lg-3 -->
-                <div class="col-lg-3">
-                    <div class="fb-like-box"
-                        data-href="https://www.facebook.com/pages/Skishop-L&#xe9;lex/141845349228708"
-                        data-colorscheme="light"
-                        data-show-faces="true"
-                        data-header="true"
-                        data-stream="true"
-                        data-show-border="true">
-                    </div>
-                </div><!-- /.col-lg-3 -->
-            </div><!-- /.row -->
-
-            <!-- START THE FEATURETTES -->
-
-            <hr class="featurette-divider">
-
-            <div id="featurette-location" class="row featurette">
-                <div class="col-md-7">
-                    <h2 class="featurette-heading">Au pied des pistes. Au coeur de la montagne.</h2>
-                    <p class="lead">
-                        Eté comme hiver, profitez sans perdre de temps&nbsp;!
-                    </p>
-                    <p>
-                        SkiShop vous accueille au cœur du village de Lélex, à 50 m de la télécabine de La Catheline. Le magasin est ouvert de XX à XX et pour faciliter vos démarches, vous pouvez retirer votre matériel la veille à partir de 18h. De Léléx, vous êtes à 10 minutes de la station de Mijoux, à 45 des Rousses. L'été, le magasin est à moins de 15 minutes des premières descentes VTT.
-                    </p>
-                    <p>
-                        Et pour encore plus de rapidité, nous vous proposons de retirer vos forfaits directement en magasin&nbsp;!
-                    </p>
-                    <p></p>
-                </div>
-                <div class="col-md-5">
-                    <img class="featurette-image img-responsive" src="images/placeholder-featurette.png" alt="Generic placeholder image">
-                </div>
-            </div>
-
-            <hr class="featurette-divider">
-
-            <div id="featurette-partner" class="row featurette">
-                <div class="col-md-5">
-                    <img class="featurette-image img-responsive" src="images/partners.png" alt="Logos des partenaires Skishop">
-                </div>
-                <div class="col-md-7">
-                    <h2 class="featurette-heading">Le meilleur de l'équipement <span class="text-muted">Disponible à la location et à la vente</span></h2>
-                    <p>
-                        Skishop est partenaire / revendeur de nombreux grands noms de la glisse tels que XXX pour le ski, Imperium pour le snowboard, XXX pour le snowscoot. Skishop vous propose également de découvrir des disciplines telles que le Snwoscoot ou le VTT de descente pour toujours plus de nouvelles sensations&nbsp;!
-                    </p>
-                    <p>
-                        Visitez notre page partenaire pour plus d'informations.
+                        <a class="btn btn-lg btn-primary" href="#featurette-partner" role="button">En savoir plus</a>
                     </p>
                 </div>
             </div>
-
-            <hr class="featurette-divider">
-
-            <div id="featurette-skimium" class="row featurette">
-                <div class="col-md-7">
-                    <h2 class="featurette-heading">Réservez avec Skimium.com <span class="text-muted">Gain de temps et d'argent&nbsp;!</span></h2>
-                    <p class="lead">
-                        Testez les nombreux avantages de la réservation en ligne avec notre partenaire Skimium.com :
-                    </p>
-                    <ul>
-                        <li>
-                            vous bénéficiez de réductions cumulées, pouvant aller jusqu’à -40&nbsp;% même en haute saison&nbsp;;
-                        </li>
-                        <li>
-                            votre matériel est réservé et sera disponible dès votre arrivée au SkiShop de Lélex, station Monts Jura&nbsp;;
-                        </li>
-                        <li>
-                            vous ne versez que 10&nbsp;% d’acompte à la réservation.
-                        </li>
-                    </ul>
+        </div>
+        <div class="item">
+            <img data-src="holder.js/900x500/auto/#555:#5a5a5a/text:Third slide" alt="Third slide">
+            <div class="container">
+                <div class="carousel-caption">
+                    <h1>Skishop est partenaire Skimium.com</h1>
                     <p>
-                        <a href="http://www.skimium.fr/store/ski-shop-lelex-167" role="button">Réservez dés maintenant sur Skimium.com</a>
+                        Skimium.com (groupe Decathlon) vous permet de reserver votre matériel en ligne, tout en profitant de tarifs exclusifs.
                     </p>
-                </div>
-                <div class="col-md-5">
-                    <img class="featurette-image img-responsive" src="images/skimium-window.png" alt="Capture du site Skimium.com">
+                    <p>
+                        Moins de perte de temps, plus de plaisir &nbsp;!
+                    </p>
+                    <p>
+                        <a class="btn btn-lg btn-default" href="#featurette-skimium" role="button">En savoir plus</a><a class="btn btn-lg btn-primary" href="http://www.skimium.fr/store/ski-shop-lelex-167" role="button">Réservez dés maintenant sur Skimium.com</a>
+                    </p>
                 </div>
             </div>
+        </div>
+    </div>
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+</div><!-- /.carousel -->
 
-            <hr class="featurette-divider">
+<!-- Marketing messaging and featurettes
+================================================== -->
+<!-- Wrap the rest of the page in another container to center all the content. -->
 
-            <!-- /END THE FEATURETTES -->
+<div class="container marketing">
 
-            <!-- FOOTER -->
-            <footer>
-                <p class="pull-right">
-                    <a href="#">Revenir en début de page</a>
-                </p>
-                <p>
-                    &copy; 2009, 2014 Skishop Lelex &middot;
-                    +33 (0)4 50 28 88 72 &middot;
-                    SIRET&nbsp;: 515392959 &middot;
-                    En partenariat avec <a href="http://www.skimium.fr/store/ski-shop-lelex-167">Skimium.com</a> &middot; <a href="#">Contactez nous</a>
-                </p>
-            </footer>
+    <!-- Four columns of text below the carousel -->
+    <div class="row">
+        <div class="col-lg-3">
+            <img class="img-circle" src="images/lelex.jpg" alt="Generic placeholder image">
+            <h2>Au coeur de la station</h2>
+            <p>
+                Le magasin se situe à 50m de la télécabine de La Catheline et de l'office de tourisme, au coeur du village.
+            </p>
+            <p>
+                <a class="btn btn-default" href="#featurette-location" role="button">En savoir plus &raquo;</a>
+            </p>
+        </div><!-- /.col-lg-3 -->
+        <div class="col-lg-3">
+            <img class="img-circle" src="images/coreupt-ski.jpg" alt="Generic placeholder image">
+            <h2>Du matériel de pointe</h2>
+            <p>
+                Skishop est partenaire / revendeur de nombreux grands noms de la glisse, et vous propose également de découvrir de nouvelles disciplines telles que le snowscoot ou le VTT de descente.
+            </p>
+            <p>
+                <a class="btn btn-default" href="#featurette-partner" role="button">En savoir plus &raquo;</a>
+            </p>
+        </div><!-- /.col-lg-3 -->
+        <div class="col-lg-3">
+            <img class="img-rounded" src="images/skimium-small.png" alt="Logo Skimium">
+            <h2>Partenaire Skimium.com</h2>
+            <p>
+                Un blabla un peu différent du détail qu'on retrouvera plus bas.
+            </p>
+            <p>
+                <a class="btn btn-default" href="#featurette-skimium" role="button">En savoir plus &raquo;</a>
+            </p>
+        </div><!-- /.col-lg-3 -->
+        <div class="col-lg-3">
+            <div class="fb-like-box"
+            data-href="https://www.facebook.com/pages/Skishop-L&#xe9;lex/141845349228708"
+            data-colorscheme="light"
+            data-show-faces="true"
+            data-header="true"
+            data-stream="true"
+            data-show-border="true"></div>
+        </div><!-- /.col-lg-3 -->
+    </div><!-- /.row -->
 
-        </div><!-- /.container -->
+    <!-- START THE FEATURETTES -->
 
-        <!-- Bootstrap core JavaScript
-        ================================================== -->
-        <!-- Placed at the end of the document so the pages load faster -->
-        <script src="js/jquery-1.11.1.min.js"></script>
-        <script src="js/bootstrap-3.1.1.min.js"></script>
-        <!-- TODO Remove when no image placeholder left. -->
-        <script src="../../assets/js/docs.min.js"></script>
-        <!-- TODO Add Google Analytics -->
-    </body>
-</html>
+    <hr class="featurette-divider">
+
+    <div id="featurette-location" class="row featurette">
+        <div class="col-md-7">
+            <h2 class="featurette-heading">Au pied des pistes. Au coeur de la montagne.</h2>
+            <p class="lead">
+                Eté comme hiver, profitez sans perdre de temps&nbsp;!
+            </p>
+            <p>
+                SkiShop vous accueille au cœur du village de Lélex, à 50 m de la télécabine de La Catheline. Le magasin est ouvert de XX à XX et pour faciliter vos démarches, vous pouvez retirer votre matériel la veille à partir de 18h. De Léléx, vous êtes à 10 minutes de la station de Mijoux, à 45 des Rousses. L'été, le magasin est à moins de 15 minutes des premières descentes VTT.
+            </p>
+            <p>
+                Et pour encore plus de rapidité, nous vous proposons de retirer vos forfaits directement en magasin&nbsp;!
+            </p>
+            <p></p>
+        </div>
+        <div class="col-md-5">
+            <img class="featurette-image img-responsive" src="images/placeholder-featurette.png" alt="Generic placeholder image">
+        </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div id="featurette-partner" class="row featurette">
+        <div class="col-md-5">
+            <img class="featurette-image img-responsive" src="images/partners.png" alt="Logos des partenaires Skishop">
+        </div>
+        <div class="col-md-7">
+            <h2 class="featurette-heading">Le meilleur de l'équipement <span class="text-muted">Disponible à la location et à la vente</span></h2>
+            <p>
+                Skishop est partenaire / revendeur de nombreux grands noms de la glisse tels que XXX pour le ski, Imperium pour le snowboard, XXX pour le snowscoot. Skishop vous propose également de découvrir des disciplines telles que le Snwoscoot ou le VTT de descente pour toujours plus de nouvelles sensations&nbsp;!
+            </p>
+            <p>
+                Visitez notre page partenaire pour plus d'informations.
+            </p>
+        </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div id="featurette-skimium" class="row featurette">
+        <div class="col-md-7">
+            <h2 class="featurette-heading">Réservez avec Skimium.com <span class="text-muted">Gain de temps et d'argent&nbsp;!</span></h2>
+            <p class="lead">
+                Testez les nombreux avantages de la réservation en ligne avec notre partenaire Skimium.com :
+            </p>
+            <ul>
+                <li>
+                    vous bénéficiez de réductions cumulées, pouvant aller jusqu’à -40&nbsp;% même en haute saison&nbsp;;
+                </li>
+                <li>
+                    votre matériel est réservé et sera disponible dès votre arrivée au SkiShop de Lélex, station Monts Jura&nbsp;;
+                </li>
+                <li>
+                    vous ne versez que 10&nbsp;% d’acompte à la réservation.
+                </li>
+            </ul>
+            <p>
+                <a href="http://www.skimium.fr/store/ski-shop-lelex-167" role="button">Réservez dés maintenant sur Skimium.com</a>
+            </p>
+        </div>
+        <div class="col-md-5">
+            <img class="featurette-image img-responsive" src="images/skimium-window.png" alt="Capture du site Skimium.com">
+        </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <!-- /END THE FEATURETTES -->
+
+    <!-- FOOTER -->
+    <footer>
+        <p class="pull-right">
+            <a href="#">Revenir en début de page</a>
+        </p>
+        <p>
+            &copy; 2009, 2014 Skishop Lelex &middot;
+            +33 (0)4 50 28 88 72 &middot;
+            SIRET&nbsp;: 515392959 &middot;
+            En partenariat avec <a href="http://www.skimium.fr/store/ski-shop-lelex-167">Skimium.com</a> &middot; <a href="#">Contactez nous</a>
+        </p>
+    </footer>
+
+</div><!-- /.container -->
