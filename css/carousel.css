@@ -31,7 +31,6 @@ body {
   padding-left: 15px;
 }
 
-
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
 
@@ -111,20 +110,20 @@ body {
   }
 
   /* Navbar positioning foo */
-  .navbar-wrapper {
+  .navbar-wrapper, .simple-container .navbar {
     margin-top: 20px;
   }
-  .navbar-wrapper .container {
+  .navbar-wrapper .container, .simple-container .navbar {
     padding-right: 15px;
     padding-left:  15px;
   }
-  .navbar-wrapper .navbar {
+  .navbar-wrapper .navbar, .simple-container .navbar {
     padding-right: 0;
     padding-left:  0;
   }
 
   /* The navbar becomes detached from the top, so we round the corners */
-  .navbar-wrapper .navbar {
+  .navbar-wrapper .navbar, .simple-container .navbar {
     border-radius: 4px;
   }
 
