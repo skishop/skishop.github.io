@@ -96,6 +96,11 @@ body {
   letter-spacing: -1px;
 }
 
+#shop-prices-table {
+    width: 80%;
+    margin: 0 auto;
+}
+
 
 
 /* RESPONSIVE CSS
