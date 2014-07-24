@@ -96,12 +96,14 @@ body {
   letter-spacing: -1px;
 }
 
-#shop-prices-table {
+#shop-prices-table, #summer-prices-table {
     width: 80%;
     margin: 0 auto;
 }
 
-
+footer {
+    padding-top: 20px;
+}
 
 /* RESPONSIVE CSS
 -------------------------------------------------- */
