@@ -1,13 +1,12 @@
 {% include head.html %}
 {% include fb-fan-box.html %}
 
-<div class="navbar-wrapper">
-    <div class="container">
-        {% include navbar.html %}
-    </div>
+{% include navbar.html %}
+<div id="content" class="container-fluid">
+    {{ content }}
+    {% include footer.html %}
 </div>
 
-{{ content }}
 
 {% include js-includes.html %}
 {% include bottom.html %}
