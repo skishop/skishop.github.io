@@ -7,9 +7,52 @@ body {
   color: #5a5a5a;
 }
 
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>.active>a:focus {
+    color: #fff;
+    background-color: #8D0406;
+}
+
 #content {
     margin-top: 50px
 }
+
+.navbar-brand {
+    text-indent: -9999px;
+    width: 220px;
+    background-image: url("../images/logo-220x50.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#featurette-partner {
+    text-align: center;
+}
+#featurette-partner .featurette-heading {
+    margin-top: 50px;
+}
+#featurette-partner .lead {
+    margin-top: 20px;
+    font-style: italic;   
+}
+.partner-logo {
+    margin: 1em;
+}
+
+footer {
+    text-align: center;
+}
+
+footer p.nav {
+    text-align: right;
+}
+/*
+.page-header {
+    height: 450px;
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(0,0,0,.6);
+    background-color: #777;
+}*/
 
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
@@ -79,10 +122,6 @@ body {
 #shop-prices-table, #summer-prices-table {
     width: 80%;
     margin: 0 auto;
-}
-
-footer {
-    padding-top: 20px;
 }
 
 /* RESPONSIVE CSS
