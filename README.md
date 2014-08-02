@@ -14,3 +14,10 @@ Auto-refresh Jekyll
 bundle exec jekyll serve --watch
 ```
 
+If command shows encoding error on Windows, these before launching Jekyll:
+
+```
+set LC_ALL=en_US.UTF-8
+set LANG=en_US.UTF-8
+```
+

@@ -80,6 +80,9 @@ body {
   background-repeat: no-repeat;
   background-position: center; }
 
+.container {
+  padding-top: 50px; }
+
 .carousel {
   height: 400px; }
 
@@ -108,7 +111,9 @@ body {
     #content #featurette-partner .partner-logo {
       margin: 1em; }
   #content header {
-    text-align: center; }
+    padding: 0;
+    text-align: center;
+    height: 400px; }
   #content footer {
     text-align: center; }
     #content footer p.nav {

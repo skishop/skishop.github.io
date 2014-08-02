@@ -107,6 +107,10 @@ $header_height: 400px;
     background-position: center;
 }
 
+.container {
+  padding-top: 50px; // Because navbar is fixed, we need to be sure that every container won't overlap it.
+}
+
 .carousel {
   
     height: $header_height;
@@ -151,7 +155,9 @@ $header_height: 400px;
     }
     
     header {
+      padding: 0; // Bootstrap Jumbotron (site headers are always jumbotron) has padding top/bottom 48px 
       text-align: center;
+      height: $header_height;
     }
     
     footer {
