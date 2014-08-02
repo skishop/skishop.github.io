@@ -1,0 +1,170 @@
+/*--- From http://getbootstrap.com/examples/carousel/carousel.css ---*/
+
+/* Padding below the footer and lighter body text */
+body {
+  padding-bottom: 40px;
+  color: #5a5a5a;
+}
+
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 400px;
+  background-color: #777;
+}
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 400px;
+}
+
+/* Pad the edges of the mobile views a bit */
+.marketing {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-3 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.marketing h2 {
+  font-weight: normal;
+}
+.marketing .col-lg-3 p {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 768px) {
+
+  /* Remove the edge padding needed for mobile */
+  .marketing {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 992px) {
+  .featurette-heading {
+    margin-top: 120px;
+  }
+}
+
+/*--- End carousel.css ---*/
+
+/*--- Constants ---*/
+
+$brand_red: #8D0406; // Most light part of shop logo
+$white: #FFF;
+
+$header_height: 400px;
+
+/*--- Overriding Bootstrap styles ---*/
+
+/* Active nav item takes brand red as a background color. */
+.navbar-inverse .navbar-nav>.active>a,
+.navbar-inverse .navbar-nav>.active>a:hover,
+.navbar-inverse .navbar-nav>.active>a:focus {
+    color: $white;
+    background-color: $brand_red;
+}
+
+/* Change navbar-brand background to shop logo. */
+.navbar-brand {
+    text-indent: -9999px;
+    width: 220px;
+    background-image: url("../images/logo-220x50.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.carousel {
+  
+    height: $header_height;
+    //margin-bottom: 60px;
+}
+
+/*--- End Bootstrap overriding ---*/
+
+/*--- Site layout ---*/
+
+/**
+ * Layout is
+ * Navbar
+ * #content (fluid container)
+ * - header (could be a carousel, jumbotron)
+ * - multi-purpose containers (not fluid), sections
+ * - footer
+ * 
+ * 
+ * 
+ * */
+
+#content {
+  
+    margin-top: 50px;
+    
+    #featurette-partner {
+        
+        text-align: center;
+        
+        .featurette-heading {
+        margin-top: 50px;
+        }
+        
+        .lead {
+            margin-top: 20px;
+            font-style: italic;   
+        }
+        .partner-logo {
+            margin: 1em;
+        }
+    }
+    
+    header {
+      text-align: center;
+    }
+    
+    footer {
+        
+        text-align: center;
+        
+        p.nav {
+            text-align: right;
+        }
+    }
+}
+
+#shop-prices-table, #summer-prices-table {
+    width: 80%;
+    margin: 0 auto;
+}

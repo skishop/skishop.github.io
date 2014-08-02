@@ -6,3 +6,4 @@
 *.iml
 
 _site/
+.sass-cache
