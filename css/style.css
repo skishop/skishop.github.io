@@ -80,7 +80,7 @@ body {
     font-size: 50px; } }
 @media (min-width: 992px) {
   .featurette-heading {
-    margin-top: 120px; } }
+    margin-top: 50px; } }
 /*--- End carousel.css ---*/
 /*--- Constants ---*/
 /*--- Overriding Bootstrap styles ---*/
@@ -141,3 +141,7 @@ body {
 #shop-prices-table, #summer-prices-table {
   width: 80%;
   margin: 0 auto; }
+
+#map-canvas {
+  width: 500px;
+  height: 400px; }

@@ -3,6 +3,9 @@ layout: main
 title: Contact
 group: navigation
 ---
+
+{% include maps-init.html %}
+
 <header class="jumbotron">
     <div class="container">
         <h1>Contactez-nous&nbsp;!</h1>
@@ -13,39 +16,49 @@ group: navigation
 </header>
 
 <section class="container">
+    <div class="row">
 
-    <address class="vcard">
-        <strong><a title="SkiShop Lélex, votre magasin de location de matériel de ski" href="http://skishop-lelex.com" class="fn org url">SkiShop Lélex</a></strong>
-        <div class="adr">
-            <span class="street-address">Résidence Le Grand Crêt</span>
-            <br>
-            <span class="postal-code">01410</span><span class="locality">Lélex</span>
-            <br>
-            <span class="country-name">France</span>
-            <br>
+        <div class="col-md-7">
+            <address class="vcard">
+                <strong><a title="SkiShop Lélex, votre magasin de location de matériel de ski" href="http://skishop-lelex.com" class="fn org url">SkiShop Lélex</a></strong>
+                <div class="adr">
+                    <span class="street-address">Résidence Le Grand Crêt</span>
+                    <br/>
+                    <span class="postal-code">01410</span><span class="locality">Lélex</span>
+                    <br/>
+                    <span class="country-name">France</span>
+                    
+                </div>
+                <div class="geo">
+                    Coordonnées GPS&nbsp;:
+                    <br/>
+                    <abbr title="46.303616" class="latitude">+46°&nbsp;18'&nbsp;13.02"</abbr>
+                    <br/>
+                    <abbr title="5.942390" class="longitude">+5°&nbsp;56'&nbsp;32.60"</abbr>
+                    
+                </div>
+                <div class="tel">
+                    <span class="glyphicon glyphicon-earphone"></span>
+                    +33&nbsp;(0)4&nbsp;50&nbsp;28&nbsp;88&nbsp;72
+                </div>
+                <div class="tel">
+                    <span class="type">Fax&nbsp;:</span>
+                    +33&nbsp;(0)4&nbsp;50&nbsp;28&nbsp;88&nbsp;72
+                </div>
+                <strong><a title="Envoyez un mail à l'équipe de SkiShop" class="email" href="mailto:contact@skishop-lelex.com">contact@skishop-lelex.com</a></strong>
+            </address>
+            <p>Et ici, on ajoute les liens sociaux (icones à ajouter)&nbsp;:</p>
+            <ul>
+                <li><a href="{{site.fb-page-url}}">Likez-nous sur Facebook&nbsp;!</a></li>
+                <li><a href="{{site.google-url}}">Partagez-nous sur Google+&nbsp;!</a></li>
+                <li><a href="{{site.twitter-url}}">Suivez-nous sur Twitter&nbsp;!</a></li>
+            </ul>
         </div>
-        <div class="geo">
-            Coordonnées GPS&nbsp;:
-            <br>
-            <abbr title="46.303616" class="latitude">+46°&nbsp;18'&nbsp;13.02"</abbr>
-            <br>
-            <abbr title="5.942390" class="longitude">+5°&nbsp;56'&nbsp;32.60"</abbr>
-            <br>
+        
+        <div class="col-md-5">
+            <div id="map-canvas"></div>            
         </div>
-        <div class="tel">
-            <span class="glyphicon glyphicon-earphone"></span>
-            +33&nbsp;(0)4&nbsp;50&nbsp;28&nbsp;88&nbsp;72
-        </div>
-        <div class="tel">
-            <span class="type">Fax&nbsp;:</span>
-            +33&nbsp;(0)4&nbsp;50&nbsp;28&nbsp;88&nbsp;72
-        </div>
-        <strong><a title="Envoyez un mail à l'équipe de SkiShop" class="email" href="mailto:contact@skishop-lelex.com">contact@skishop-lelex.com</a></strong>
-    </address>
-
-    <!-- TODO Switch from address to Google place -->
-    <div id="google-maps">
-        <a title="Utilisez le service Google Maps pour planifier votre itinéraire à destination du SkiShop Lélex" class="external-link" href="http://maps.google.com/maps?daddr=L%C3%A9lex,France">Planifiez votre itinéraire avec Google Maps.</a>
+        
     </div>
-
 </section>
+
