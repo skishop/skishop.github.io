@@ -29,9 +29,6 @@ body {
   left: 10%;
   width: 50%;
   bottom: inherit; // Override bottom: 20px since we don't want content to be bottom-aligned
-  p.alone {
-      margin: 2em 0;
-  }
   .link-p {
       a {
           color: white;
@@ -39,6 +36,12 @@ body {
       img {
         float: right;          
       }
+  }
+}
+
+.carousel-caption, .jumbotron {
+  p.alone {
+      margin: 2em 0;
   }
 }
 
@@ -63,7 +66,7 @@ body {
 }
 
 /* Center align the text within the three columns below the carousel */
-.marketing .col-lg-3 {
+.marketing .col-lg-4 {
   margin-bottom: 20px;
   text-align: center;
 }
@@ -214,7 +217,7 @@ $header_height: 400px;
 
 #shop-prices-table, #summer-prices-table {
     width: 80%;
-    margin: 0 auto;
+    margin: 2em auto;
 }
 
 #map-canvas {

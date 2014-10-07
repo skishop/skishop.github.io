@@ -11,12 +11,13 @@ body {
   left: 10%;
   width: 50%;
   bottom: inherit; }
-  .carousel-caption p.alone {
-    margin: 2em 0; }
   .carousel-caption .link-p a {
     color: white; }
   .carousel-caption .link-p img {
     float: right; }
+
+.carousel-caption p.alone, .jumbotron p.alone {
+  margin: 2em 0; }
 
 /* Declare heights because of positioning of img element */
 .carousel .item {
@@ -52,7 +53,7 @@ body {
   padding-left: 15px; }
 
 /* Center align the text within the three columns below the carousel */
-.marketing .col-lg-3 {
+.marketing .col-lg-4 {
   margin-bottom: 20px;
   text-align: center; }
 
@@ -155,7 +156,7 @@ body {
 
 #shop-prices-table, #summer-prices-table {
   width: 80%;
-  margin: 0 auto; }
+  margin: 2em auto; }
 
 #map-canvas {
   width: 500px;
