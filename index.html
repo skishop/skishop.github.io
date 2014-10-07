@@ -14,7 +14,6 @@ group: navigation
     </ol>
     <div class="carousel-inner">
         <div class="item active">
-            <!--<img data-src="holder.js/900x400/auto/#777:#7a7a7a/text:First slide" alt="First slide">-->
             <div class="container">
                 <div class="carousel-caption">
                     <h1>Skishop Lélex, location de matériel de ski au pied des pistes</h1>
@@ -31,11 +30,11 @@ group: navigation
             </div>
         </div>
         <div class="item">
-            <img data-src="holder.js/900x400/auto/#666:#6a6a6a/text:Second slide" alt="Second slide">
+            <img src="images/freeski-1815x500.jpg" alt="Photo freeski Voelkl">
             <div class="container">
                 <div class="carousel-caption">
                     <h1>Le meilleur de la glisse et du sport de montagne</h1>
-                    <p>
+                    <p class="alone">
                         Le meilleur du ski et de la glisse, piste, freestyle, freeride, snowboard, snowscoot tout y est, ne cherchez plus c'est SkiShop Lélex.
                     </p>
                     <p>
@@ -45,15 +44,15 @@ group: navigation
             </div>
         </div>
         <div class="item">
-            <img src="images/panorama-1594x400.jpg" alt="Third slide">
+            <img src="images/panorama-1594x400.jpg" alt="Photo du panorama de Lélex">
             <div class="container">
                 <div class="carousel-caption">
                     <h1>Skishop est partenaire Skimium.com</h1>
-                    <p>
-                        Plus simple, plus rapide, réservez votre matériel dès maintenant.
+                    <p class="alone link-p">
+                        <a href="{{site.skimium-url}}" title=""><img src="images/skimium.png" alt="Logo Skimium" />Plus simple, plus rapide, réservez votre matériel dès maintenant.</a>                        
                     </p>
                     <p>
-                        <a class="btn btn-lg btn-default" href="#featurette-skimium" role="button">En savoir plus</a><a class="btn btn-lg btn-primary" href="http://www.skimium.fr/store/ski-shop-lelex-167" role="button">Réservez dés maintenant sur Skimium.com</a>
+                        <a class="btn btn-lg btn-primary" href="#featurette-skimium" role="button">En savoir plus</a>
                     </p>
                 </div>
             </div>
@@ -70,6 +69,7 @@ group: navigation
 <section class="container marketing">
 
     <!-- Four columns of text below the carousel -->
+    <!--
     <div class="row">
         <div class="col-lg-2">
             <img class="img-circle" src="images/lelex.jpg" alt="Generic placeholder image">
@@ -82,7 +82,7 @@ group: navigation
         </div>
         <div class="col-lg-6">
             <div class="fb-like" data-href="https://www.facebook.com/pages/Skishop-L&#xe9;lex/141845349228708" data-width="60" data-layout="box_count" data-action="like" data-show-faces="true" data-share="true"></div>
-            <!--<div class="fb-activity" data-site="developers.facebook.com" data-action="likes, recommends" data-width="300" data-height="300" data-colorscheme="light" data-header="true"></div>-->
+            <div class="fb-activity" data-site="developers.facebook.com" data-action="likes, recommends" data-width="300" data-height="300" data-colorscheme="light" data-header="true"></div>
             <div class="fb-like-box"
             data-href="https://www.facebook.com/pages/Skishop-L&#xe9;lex/141845349228708"
             data-colorscheme="light"
@@ -92,16 +92,16 @@ group: navigation
             data-show-border="false"></div>
         </div>
     </div>
-
+-->
     <!-- START THE FEATURETTES -->
 
-    <hr class="featurette-divider">
+    <!--<hr class="featurette-divider">-->
 
     <div id="featurette-location" class="row featurette">
         <div class="col-md-7">
             <h2 class="featurette-heading">SkiShop Lélex, le magasin de sport de la station Monts Jura&nbsp;!</h2>
             <p class="lead">
-                Avec <strong>96,8% de satisfaction client</strong> (<a href="http://www.skimium.fr/store/ski-shop-lelex-167#shop-tab-satisfaction">données skimium.com</a>), Skishop vous accueille 7j/7 de 8h30 à 19h non stop, dans la bonne humeur et le professionalisme pour vous offrir une expérience de glisse toujours plus exceptionelle et avec toujours plus de services gratuits pour votre plus grand plaisir : gardiennage de materiel, retrait la veille au soir de votre premier jour de ski et parking juste devant le shop.
+                Avec <strong>96,8% de satisfaction client</strong> (<a href="{{site.skimium-url}}#shop-tab-satisfaction">données skimium.com</a>), Skishop vous accueille 7j/7 de 8h30 à 19h non stop, dans la bonne humeur et le professionalisme pour vous offrir une expérience de glisse toujours plus exceptionelle et avec toujours plus de services gratuits pour votre plus grand plaisir : gardiennage de materiel, retrait la veille au soir de votre premier jour de ski et parking juste devant le shop.
             </p>
         </div>
         <div class="col-md-5">
@@ -139,7 +139,7 @@ group: navigation
 
     <div id="featurette-skimium" class="row featurette">
         <div class="col-md-7">
-            <h2 class="featurette-heading">Réservez avec <a href="http://www.skimium.fr/store/ski-shop-lelex-167">Skimium.com</a></h2>
+            <h2 class="featurette-heading">Réservez avec <a href="{{site.skimium-url}}">Skimium.com</a></h2>
             <p class="lead">
                 Testez les nombreux avantages de la réservation en ligne avec notre partenaire Skimium.com :
             </p>
@@ -155,11 +155,11 @@ group: navigation
                 </li>
             </ul>
             <p>
-                <a href="http://www.skimium.fr/store/ski-shop-lelex-167" role="button">Réservez dés maintenant sur Skimium.com</a>
+                <a href="{{site.skimium-url}}" role="button">Réservez dés maintenant sur Skimium.com</a>
             </p>
         </div>
         <div class="col-md-5">
-            <img class="featurette-image img-responsive" src="images/skimium-window.png" alt="Capture du site Skimium.com">
+            <a href="{{site.skimium-url}}"><img class="featurette-image img-responsive" src="images/skimium-window.png" alt="Capture du site Skimium.com"></a>
         </div>
     </div>
 

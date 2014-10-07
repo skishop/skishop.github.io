@@ -11,7 +11,7 @@ $transparent: rgba(0, 0, 0, 0);
     background-image: -moz-linear-gradient(left, $from_color, $to_color), url($image_url); /* FF3.6+ */
     background-image: -ms-linear-gradient(left, $from_color, $to_color), url($image_url); /* IE10 */
     background-image: -o-linear-gradient(left, $from_color, $to_color), url($image_url); /* Opera 11.10+ */
-    background-image: linear-gradient(to right, black, $from_color 50%, $to_color 80%, $transparent 100%), url($image_url); /* W3C */
+    background-image: linear-gradient(to right, black, $from_color 40%, $to_color 80%, $transparent 100%), url($image_url); /* W3C */
 }
 
 /*--- From http://getbootstrap.com/examples/carousel/carousel.css ---*/
@@ -28,21 +28,32 @@ body {
   text-align: left;
   left: 10%;
   width: 50%;
+  bottom: inherit; // Override bottom: 20px since we don't want content to be bottom-aligned
+  p.alone {
+      margin: 2em 0;
+  }
+  .link-p {
+      a {
+          color: white;
+      }
+      img {
+        float: right;          
+      }
+  }
 }
 
 /* Declare heights because of positioning of img element */
 .carousel .item {
   height: 400px;
-  //background-color: #777;
   @include image-gradient('../images/shop-outside-1228x500.jpg', black, $transparent);
 }
+
 .carousel-inner > .item > img {
   position: absolute;
   top: 0;
   left: 0;
   min-width: 100%;
-  height: 400px;
-  
+  height: 400px;  
 }
 
 /* Pad the edges of the mobile views a bit */
@@ -110,6 +121,16 @@ $white: #FFF;
 $header_height: 400px;
 
 /*--- Overriding Bootstrap styles ---*/
+
+.btn-primary {
+    background-color: $brand_red;
+    border-color: darken($brand_red, 10%);
+}
+
+.btn-primary:hover {
+    background-color: lighten($brand_red, 10%);
+    border-color: $brand_red;
+}
 
 /* Active nav item takes brand red as a background color. */
 .navbar-inverse .navbar-nav>.active>a,
