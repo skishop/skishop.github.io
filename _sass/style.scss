@@ -1,4 +1,12 @@
+/*--- Constants ---*/
+
+$brand_red: #8D0406; // Most light part of shop logo
+
+$header_height: 500px;
+
 $transparent: rgba(0, 0, 0, 0);
+
+
 
 // From http://stackoverflow.com/a/2547064
 @mixin image-gradient($image_url, $from_color, $to_color) {
@@ -11,7 +19,7 @@ $transparent: rgba(0, 0, 0, 0);
     background-image: -moz-linear-gradient(left, $from_color, $to_color), url($image_url); /* FF3.6+ */
     background-image: -ms-linear-gradient(left, $from_color, $to_color), url($image_url); /* IE10 */
     background-image: -o-linear-gradient(left, $from_color, $to_color), url($image_url); /* Opera 11.10+ */
-    background-image: linear-gradient(to right, black, $from_color 40%, $to_color 80%, $transparent 100%), url($image_url); /* W3C */
+    background-image: linear-gradient(to right, black, $from_color 30%, $to_color 80%, $transparent 100%), url($image_url); /* W3C */
 }
 
 /*--- From http://getbootstrap.com/examples/carousel/carousel.css ---*/
@@ -27,7 +35,7 @@ body {
   z-index: 10;
   text-align: left;
   left: 10%;
-  width: 50%;
+  width: 40%;
   bottom: inherit; // Override bottom: 20px since we don't want content to be bottom-aligned
   .link-p {
       a {
@@ -45,9 +53,17 @@ body {
   }
 }
 
+.social-caption {
+    color: white;
+    text-align: center;
+    h1 {
+        margin: 1.5em 0;
+    }
+}
+
 /* Declare heights because of positioning of img element */
 .carousel .item {
-  height: 400px;
+  height: $header_height;
   @include image-gradient('../images/shop-outside-1228x500.jpg', black, $transparent);
 }
 
@@ -56,7 +72,7 @@ body {
   top: 0;
   left: 0;
   min-width: 100%;
-  height: 400px;  
+  height: $header_height;  
 }
 
 /* Pad the edges of the mobile views a bit */
@@ -116,13 +132,6 @@ body {
 
 /*--- End carousel.css ---*/
 
-/*--- Constants ---*/
-
-$brand_red: #8D0406; // Most light part of shop logo
-$white: #FFF;
-
-$header_height: 400px;
-
 /*--- Overriding Bootstrap styles ---*/
 
 .btn-primary {
@@ -139,7 +148,7 @@ $header_height: 400px;
 .navbar-inverse .navbar-nav>.active>a,
 .navbar-inverse .navbar-nav>.active>a:hover,
 .navbar-inverse .navbar-nav>.active>a:focus {
-    color: $white;
+    color: white;
     background-color: $brand_red;
 }
 
@@ -187,7 +196,7 @@ $header_height: 400px;
         text-align: center;
         
         .featurette-heading {
-        margin-top: 50px;
+            margin-top: 50px;
         }
         
         .lead {
@@ -203,6 +212,9 @@ $header_height: 400px;
       padding: 0; // Bootstrap Jumbotron (site headers are always jumbotron) has padding top/bottom 48px 
       text-align: center;
       height: $header_height;
+      &.jumbotron {
+          height: $header_height - 100px;
+      }
     }
     
     footer {
@@ -211,13 +223,28 @@ $header_height: 400px;
         
         p.nav {
             text-align: right;
+            margin: 2em 10%;
+            
         }
     }
 }
 
 #shop-prices-table, #summer-prices-table {
     width: 80%;
-    margin: 2em auto;
+    margin: 3em auto;
+    text-align: center;
+    vertical-align: middle;
+    th {
+        text-align: center;
+    vertical-align: middle;
+    }
+    .cell-detail {
+        font-size: .7em;
+    }
+    .sub-category {
+        font-style: italic;
+        text-align: left;
+    }
 }
 
 #map-canvas {

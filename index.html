@@ -3,16 +3,16 @@ layout: main
 title: Accueil
 group: navigation
 ---
-<!-- Carousel
-================================================== -->
-<header id="myCarousel" class="carousel slide" data-ride="carousel">
-    <!-- Indicators -->
+
+<header id="headline-carousel" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#headline-carousel" data-slide-to="0" class="active"></li>
+        <li data-target="#headline-carousel" data-slide-to="1"></li>
+        <li data-target="#headline-carousel" data-slide-to="2"></li>
+        <li data-target="#headline-carousel" data-slide-to="3"></li>
     </ol>
     <div class="carousel-inner">
+        
         <div class="item active">
             <div class="container">
                 <div class="carousel-caption">
@@ -29,6 +29,7 @@ group: navigation
                 </div>
             </div>
         </div>
+        
         <div class="item">
             <img src="images/freeski-1815x500.jpg" alt="Photo freeski Voelkl">
             <div class="container">
@@ -43,13 +44,16 @@ group: navigation
                 </div>
             </div>
         </div>
+        
         <div class="item">
             <img src="images/panorama-1594x400.jpg" alt="Photo du panorama de Lélex">
             <div class="container">
                 <div class="carousel-caption">
-                    <h1>Skishop est partenaire Skimium.com</h1>
+                    <p>
+                        <a class="external-link" href="{{site.skimium-url}}" title=""><img src="images/skimium.png" alt="Logo Skimium" /></a>
+                    </p>
                     <p class="alone link-p">
-                        <a href="{{site.skimium-url}}" title=""><img src="images/skimium.png" alt="Logo Skimium" />Plus simple, plus rapide, réservez votre matériel dès maintenant.</a>                        
+                        <a class="external-link" href="{{site.skimium-url}}" title="">Plus simple, plus rapide, réservez votre matériel dès maintenant.</a>                        
                     </p>
                     <p>
                         <a class="btn btn-lg btn-primary" href="#featurette-skimium" role="button">En savoir plus</a>
@@ -57,55 +61,44 @@ group: navigation
                 </div>
             </div>
         </div>
+        
+        <div class="item">
+            <img src="images/skishop-social-1295x400.jpg" alt="TODO">
+            <div class="container">
+                <div class="row">                   
+                    <div class="col-lg-4">
+                        <div style="background-color: white" class="fb-like-box" data-href="{{site.fb-page-url}}"
+                            data-height="325" data-colorscheme="light" data-show-faces="true" data-header="true" data-stream="false" data-show-border="true"></div>
+                    </div>
+                    <div class="col-lg-4 social-caption">
+                        <h1>Suivez Skishop Lélex sur les réseaux sociaux&nbsp;!</h1>
+                        <a class="twitter-follow-button external-link" href="{{site.twitter-url}}" data-lang="fr">
+                            Suivez Skishop Lélex @skishoplelex
+                        </a>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="g-page" data-href="//plus.google.com/u/0/117439048034948114833" data-rel="publisher"></div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
     </div>
-    <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
-    <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
-</header><!-- /.carousel -->
-
-<!-- Marketing messaging and featurettes
-================================================== -->
-<!-- Wrap the rest of the page in another container to center all the content. -->
+    <a class="left carousel-control" href="#headline-carousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+    <a class="right carousel-control" href="#headline-carousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+</header>
 
 <section class="container marketing">
-
-    <!-- Four columns of text below the carousel -->
-    <!--
-    <div class="row">
-        <div class="col-lg-2">
-            <img class="img-circle" src="images/lelex.jpg" alt="Generic placeholder image">
-        </div>
-        <div class="col-lg-2">
-            <img class="img-circle" src="images/coreupt-ski.jpg" alt="Generic placeholder image">
-        </div>
-        <div class="col-lg-2">
-            <img class="img-rounded" src="images/skimium-small.png" alt="Logo Skimium">
-        </div>
-        <div class="col-lg-6">
-            <div class="fb-like" data-href="https://www.facebook.com/pages/Skishop-L&#xe9;lex/141845349228708" data-width="60" data-layout="box_count" data-action="like" data-show-faces="true" data-share="true"></div>
-            <div class="fb-activity" data-site="developers.facebook.com" data-action="likes, recommends" data-width="300" data-height="300" data-colorscheme="light" data-header="true"></div>
-            <div class="fb-like-box"
-            data-href="https://www.facebook.com/pages/Skishop-L&#xe9;lex/141845349228708"
-            data-colorscheme="light"
-            data-show-faces="false"
-            data-header="false"
-            data-stream="false"
-            data-show-border="false"></div>
-        </div>
-    </div>
--->
-    <!-- START THE FEATURETTES -->
-
-    <!--<hr class="featurette-divider">-->
 
     <div id="featurette-location" class="row featurette">
         <div class="col-md-7">
             <h2 class="featurette-heading">SkiShop Lélex, le magasin de sport de la station Monts Jura&nbsp;!</h2>
             <p class="lead">
-                Avec <strong>96,8% de satisfaction client</strong> (<a href="{{site.skimium-url}}#shop-tab-satisfaction">données skimium.com</a>), Skishop vous accueille 7j/7 de 8h30 à 19h non stop, dans la bonne humeur et le professionalisme pour vous offrir une expérience de glisse toujours plus exceptionelle et avec toujours plus de services gratuits pour votre plus grand plaisir : gardiennage de materiel, retrait la veille au soir de votre premier jour de ski et parking juste devant le shop.
+                Avec <strong>96,8% de satisfaction client</strong> (<a class="external-link" href="{{site.skimium-url}}#shop-tab-satisfaction">données skimium.com</a>), Skishop vous accueille 7j/7 de 8h30 à 19h non stop, dans la bonne humeur et le professionnalisme pour vous offrir une expérience de glisse toujours plus exceptionnelle et avec toujours plus de services gratuits pour votre plus grand plaisir : gardiennage de matériel, retrait la veille au soir de votre premier jour de ski et parking juste devant le shop.
             </p>
         </div>
         <div class="col-md-5">
-            <iframe width="480" height="360" src="//www.youtube.com/embed/o0n0KPrymoo" frameborder="0" allowfullscreen></iframe>
+            <iframe width="480" height="360" src="//www.youtube.com/embed/DNEJlHhgISE" frameborder="0" allowfullscreen></iframe>
         </div>
     </div>
 
@@ -139,7 +132,7 @@ group: navigation
 
     <div id="featurette-skimium" class="row featurette">
         <div class="col-md-7">
-            <h2 class="featurette-heading">Réservez avec <a href="{{site.skimium-url}}">Skimium.com</a></h2>
+            <h2 class="featurette-heading">Réservez avec <a class="external-link" href="{{site.skimium-url}}">Skimium.com</a></h2>
             <p class="lead">
                 Testez les nombreux avantages de la réservation en ligne avec notre partenaire Skimium.com :
             </p>
@@ -155,16 +148,12 @@ group: navigation
                 </li>
             </ul>
             <p>
-                <a href="{{site.skimium-url}}" role="button">Réservez dés maintenant sur Skimium.com</a>
+                <a class="external-link" href="{{site.skimium-url}}" role="button">Réservez dés maintenant sur Skimium.com</a>
             </p>
         </div>
         <div class="col-md-5">
-            <a href="{{site.skimium-url}}"><img class="featurette-image img-responsive" src="images/skimium-window.png" alt="Capture du site Skimium.com"></a>
+            <a class="external-link" href="{{site.skimium-url}}"><img class="featurette-image img-responsive" src="images/skimium-window.png" alt="Capture du site Skimium.com"></a>
         </div>
     </div>
 
-    <hr class="featurette-divider">
-
-    <!-- /END THE FEATURETTES -->
-
-</section><!-- /.container -->
+</section>
