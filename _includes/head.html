@@ -4,12 +4,11 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="author" content="Skishop Lelex">
+    <meta name="author" content="Skishop Lélex">
     
-    <!-- TODO Use parameters to set unique title and description -->
-    <meta name="description" content="Skishop Lelex, location de matériel de ski">
-    <title>{{page.title}} - Skishop Lelex</title>
-
+    <title>{{page.title}} - Skishop Lélex</title>
+    <meta name="description" content="{{page.description}}">
+    
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -24,5 +23,8 @@
     <!-- Favicons -->
     <link rel="apple-touch-icon" sizes="144x144" href="/images/ico/apple-touch-icon-144.png">
     <link rel="shortcut icon" href="/images/ico/favicon.ico">
+    
+    {% include fb-opengraph.html %}
+    
 </head>
 <body>
