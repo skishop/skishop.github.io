@@ -11,32 +11,32 @@
         </div>
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-                <li {% if page.url == '/index.html' %} class="active" {% endif %}>
-                    <a href="/index.html">Accueil</a>
+                <li {% if page.permalink == '/' %} class="active" {% endif %}>
+                    <a href="/">Accueil</a>
                 </li>
-                <li {% if page.url == '/fr/prices.html' %} class="active" {% endif %}>
-                    <a href="/fr/prices.html">Tarifs</a>
+                <li {% if page.permalink == '/fr/tarifs/' %} class="active" {% endif %}>
+                    <a href="/fr/tarifs">Tarifs</a>
                 </li>
-                <li {% if page.url == '/fr/equipment.html' %} class="active" {% endif %}>
-                    <a href="/fr/equipment.html">Équipement</a>
+                <li {% if page.permalink == '/fr/equipement/' %} class="active" {% endif %}>
+                    <a href="/fr/equipement">Équipement</a>
                 </li>
-                <li {% if page.url == '/fr/summer.html' %} class="active" {% endif %}>
-                    <a href="/fr/summer.html">Été</a>
+                <li {% if page.permalink == '/fr/ete/' %} class="active" {% endif %}>
+                    <a href="/fr/ete">Été</a>
                 </li>
                 <!-- Since page has no content, don't show yet
-                <li {% if page.url == '/fr/partners.html' %} class="active" {% endif %}>
-                    <a href="/fr/partners.html">Partenaires</a>
+                <li {% if page.permalink == '/fr/partenaires' %} class="active" {% endif %}>
+                    <a href="/fr/partenaires">Partenaires</a>
                 </li>
                 -->
-                <li {% if page.url == '/fr/contact.html' %} class="active" {% endif %}>
-                    <a href="/fr/contact.html">Contact & Accès</a>
+                <li {% if page.permalink == '/fr/contact/' %} class="active" {% endif %}>
+                    <a href="/fr/contact">Contact & Accès</a>
                 </li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li>
                     <a href="http://monts-jura.com" target="_blank">Station Monts Jura</a>
                 </li>
-                <li>
+                <li{% if page.permalink == '/en/' %} class="active" {% endif %}>
                     <a href="/en" hreflang="en">EN</a>
                 </li>
             </ul>
