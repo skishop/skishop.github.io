@@ -200,4 +200,14 @@ body {
   #equipment-partners .thumbnail {
     border: none; }
 
+.fb-like-box {
+  background-color: #FFF; }
+
+#contact {
+  padding-top: 0; }
+  #contact .schema h2 {
+    margin: 0 0 1em 2em; }
+  #contact #map-canvas {
+    margin: 2em auto; }
+
 /*# sourceMappingURL=style.css.map */

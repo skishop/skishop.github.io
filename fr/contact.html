@@ -6,9 +6,9 @@ title: Contactez-nous par mail, téléphone, ou laissez vous guider !
 description: Vous pouvez contacter l'équipe Skishop Lélex par téléphone au +33 (0)4 50 28 88 72, ou grâce aux informations disponibles sur cette page.
 group: navigation
 sitemap:
-  lastmod: 2014-11-20
-  priority: 0.7
-  changefreq: monthly
+    lastmod: 2014-11-20
+    priority: 0.7
+    changefreq: monthly
 ---
 
 {% include maps-init.html %}
@@ -16,58 +16,70 @@ sitemap:
 <header class="jumbotron">
     <div class="container">
         <h1>Contactez-nous&nbsp;!</h1>
+
         <p class="lead">
             <span class="glyphicon glyphicon-earphone"></span> +33&nbsp;(0)4&nbsp;50&nbsp;28&nbsp;88&nbsp;72
         </p>
     </div>
 </header>
 
-<section class="container">
+<section id="contact" class="container">
     <div class="row">
 
+        <div class="col-md-5 schema" itemscope itemtype="http://schema.org/LocalBusiness">
+
+            <h2 itemprop="name"><a href="http://skishop-lelex.com" itemprop="url">Skishop Lélex</a></h2>
+
+            <dl class="dl-horizontal">
+                <dt>Téléphone / Fax</dt>
+                <dd itemprop="telephone"><span class="glyphicon glyphicon-earphone"></span>+33&nbsp;(0)4&nbsp;50&nbsp;28&nbsp;88&nbsp;72
+                </dd>
+                <dd itemprop="faxNumber">+33&nbsp;(0)4&nbsp;50&nbsp;28&nbsp;88&nbsp;72</dd>
+            </dl>
+
+            <dl class="dl-horizontal">
+                <dt>Email</dt>
+                <dd itemprop="email"><a title="Envoyez un mail à l'équipe de SkiShop" class="email"
+                                        href="mailto:contact@skishop-lelex.com">contact@skishop-lelex.com</a></dd>
+            </dl>
+
+            <dl class="dl-horizontal">
+                <dt>Horaires d'ouverture</dt>
+                <dd>
+                    <time itemprop="openingHours" datetime="Mo-Su 08:30-19:30">Tous les jours de 8h30 à 19h non stop
+                    </time>
+                </dd>
+            </dl>
+
+            <dl class="dl-horizontal" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                <dt>Adresse</dt>
+                <dd itemprop="streetAddress">Résidence Le Grand Crêt</dd>
+                <dd><span itemprop="postalCode">01410</span> <span itemprop="addressLocality">Lélex</span></dd>
+                <dd itemprop="addressCountry">France</dd>
+            </dl>
+
+            <dl class="dl-horizontal" itemprop="geo" itemscope itemtype="http://schema.org/GeoCoordinates">
+                <dt>Coordonnées</dt>
+                <dd>+46°&nbsp;18'&nbsp;13.02"
+                    <meta itemprop="latitude" content="46.303616"/>
+                </dd>
+                <dd>+5°&nbsp;56'&nbsp;32.60"
+                    <meta itemprop="longitude" content="5.942390"/>
+                </dd>
+            </dl>
+
+            <dl class="dl-horizontal">
+                <dt>Réseaux sociaux</dt>
+                <dd><a href="{{site.fb-page-url}}" target="_blank">Likez-nous sur Facebook&nbsp;!</a></dd>
+                <dd><a href="{{site.google-url}}" target="_blank">Partagez-nous sur Google+&nbsp;!</a></dd>
+                <dd><a href="{{site.twitter-url}}" target="_blank">Suivez-nous sur Twitter&nbsp;!</a></dd>
+            </dl>
+        </div>
+
         <div class="col-md-7">
-            
-            <address class="vcard row" style="text-align: center">
-                <h2><strong><a title="SkiShop Lélex, votre magasin de location de matériel de ski" href="http://skishop-lelex.com" class="fn org url">SkiShop Lélex</a></strong></h2>                    
-                <div class="col-md-4 adr">                        
-                    <span class="street-address">Résidence Le Grand Crêt</span>
-                    <br/>
-                    <span class="postal-code">01410</span> <span class="locality">Lélex</span>
-                    <br/>
-                    <span class="country-name">France</span>                        
-                </div>
-                <div class="col-md-4">
-                    <div class="tel">
-                        <span class="glyphicon glyphicon-earphone"></span>
-                        +33&nbsp;(0)4&nbsp;50&nbsp;28&nbsp;88&nbsp;72
-                    </div>
-                    <div class="tel">
-                        <span class="type">Fax&nbsp;:</span>
-                        +33&nbsp;(0)4&nbsp;50&nbsp;28&nbsp;88&nbsp;72
-                    </div>
-                    <strong><a title="Envoyez un mail à l'équipe de SkiShop" class="email" href="mailto:contact@skishop-lelex.com">contact@skishop-lelex.com</a></strong>
-                </div>
-                <div class="col-md-4 geo">
-                    Coordonnées GPS&nbsp;:
-                    <br/>
-                    <abbr title="46.303616" class="latitude">+46°&nbsp;18'&nbsp;13.02"</abbr>
-                    <br/>
-                    <abbr title="5.942390" class="longitude">+5°&nbsp;56'&nbsp;32.60"</abbr>
-                </div>
-            </address>
-           
-            <p>Nous sommes aussi sur les réseau sociaux&nbsp;:</p>
-            <ul>
-                <li><a href="{{site.fb-page-url}}" target="_blank">Likez-nous sur Facebook&nbsp;!</a></li>
-                <li><a href="{{site.google-url}}" target="_blank">Partagez-nous sur Google+&nbsp;!</a></li>
-                <li><a href="{{site.twitter-url}}" target="_blank">Suivez-nous sur Twitter&nbsp;!</a></li>
-            </ul>
+            <div id="map-canvas"></div>
         </div>
-        
-        <div class="col-md-5">
-            <div id="map-canvas"></div>            
-        </div>
-        
+
     </div>
 </section>
 
