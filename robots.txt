@@ -1,1 +1,4 @@
+User-agent: *
+Disallow: /fr/partners
+Disallow: /fr/partners.html
 Sitemap: http://skishop-lelex.com/sitemap.xml

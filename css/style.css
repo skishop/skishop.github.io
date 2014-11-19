@@ -18,7 +18,8 @@ body {
     float: right; }
 
 .carousel-caption p.alone, .jumbotron p.alone {
-  margin: 2em 0; }
+  margin: 2em 0;
+  font-size: 14px; }
 
 .social-caption {
   color: white;
@@ -92,26 +93,29 @@ body {
     line-height: 1.4; }
 
   .featurette-heading {
-    font-size: 50px; } }
+    font-size: 50px; }
+
+  .jumbotron p.alone {
+    font-size: 24px; } }
 @media (min-width: 992px) {
   .featurette-heading {
     margin-top: 50px; } }
 /*--- End carousel.css ---*/
 /*--- Overriding Bootstrap styles ---*/
 .btn-primary {
-  background-color: #8d0406;
+  background-color: #8D0406;
   border-color: #5b0304; }
 
 .btn-primary:hover {
   background-color: #bf0508;
-  border-color: #8d0406; }
+  border-color: #8D0406; }
 
 /* Active nav item takes brand red as a background color. */
 .navbar-inverse .navbar-nav > .active > a,
 .navbar-inverse .navbar-nav > .active > a:hover,
 .navbar-inverse .navbar-nav > .active > a:focus {
   color: white;
-  background-color: #8d0406; }
+  background-color: #8D0406; }
 
 /* Change navbar-brand background to shop logo. */
 .navbar-brand {
@@ -185,3 +189,7 @@ body {
   text-align: center; }
   #equipment-partners h2 {
     margin-bottom: 1.5em; }
+  #equipment-partners .thumbnail {
+    border: none; }
+
+/*# sourceMappingURL=style.css.map */

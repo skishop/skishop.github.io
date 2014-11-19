@@ -50,6 +50,7 @@ body {
 .carousel-caption, .jumbotron {
   p.alone {
       margin: 2em 0;
+      font-size: 14px;
   }
 }
 
@@ -121,6 +122,10 @@ body {
 
   .featurette-heading {
     font-size: 50px;
+  }
+
+  .jumbotron p.alone {
+    font-size: 24px;
   }
 }
 
@@ -257,4 +262,7 @@ body {
     h2 {
         margin-bottom: 1.5em;
     }
+  .thumbnail {
+    border: none;
+  }
 }
