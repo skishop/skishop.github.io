@@ -48,47 +48,47 @@ try_files  $uri $uri.html $uri/index.html index.html;
 
 # Permanent redirections from previous site version (exact URI matching)
 
-location /fr {
+location = /fr {
     rewrite ^ http://skishop-lelex.com permanent;
 }
 
-location /fr/public {
+location = /fr/public {
     rewrite ^ http://skishop-lelex.com permanent;
 }
 
-location /fr/public/rent {
-    rewrite ^ http://skishop-lelex.com/fr/prices permanent;
+location = /fr/public/rent {
+    rewrite ^ http://skishop-lelex.com/fr/tarifs permanent;
 }
 
-location /fr/public/snowscoot {
-    rewrite ^ http://skishop-lelex.com/fr/equipment#snowscoot permanent;
+location = /fr/public/snowscoot {
+    rewrite ^ http://skishop-lelex.com/fr/equipement#snowscoot permanent;
 }
 
-location /fr/public/vtt {
-    rewrite ^ http://skishop-lelex.com/fr/summer permanent;
+location = /fr/public/vtt {
+    rewrite ^ http://skishop-lelex.com/fr/ete permanent;
 }
 
-location /fr/public/find {
+location = /fr/public/find {
     rewrite ^ http://skishop-lelex.com/fr/contact permanent;
 }
 
-location /en/public {
-    rewrite ^ http://skishop-lelex.com/en/index#index permanent;
+location = /en/public {
+    rewrite ^ http://skishop-lelex.com/en/#index permanent;
 }
 
-location /en/rent {
-    rewrite ^ http://skishop-lelex.com/en/index#prices permanent;
+location = /en/public/rent {
+    rewrite ^ http://skishop-lelex.com/en/#prices permanent;
 }
 
-location /en/snowscoot {
-    rewrite ^ http://skishop-lelex.com/en/index#equipment permanent;
+location = /en/public/snowscoot {
+    rewrite ^ http://skishop-lelex.com/en/#equipment permanent;
 }
 
-location /en/vtt {
-    rewrite ^ http://skishop-lelex.com/en/index#summer permanent;
+location = /en/public/vtt {
+    rewrite ^ http://skishop-lelex.com/en/#summer permanent;
 }
 
-location /en/find {
-    rewrite ^ http://skishop-lelex.com/en/index#contact permanent;
+location = /en/public/find {
+    rewrite ^ http://skishop-lelex.com/en/#contact permanent;
 }
 ```

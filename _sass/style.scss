@@ -7,7 +7,6 @@ $header_height: 500px;
 $transparent: rgba(0, 0, 0, 0);
 
 
-
 // From http://stackoverflow.com/a/2547064
 @mixin image-gradient($image_url, $from_color, $to_color) {
     background: $from_color;
