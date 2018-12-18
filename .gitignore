@@ -1,9 +1,2 @@
-# Aptana project file
-.project
-
-# Intellij project files
-.idea
-*.iml
-
 _site/
 .sass-cache
