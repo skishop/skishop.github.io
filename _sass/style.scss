@@ -206,13 +206,16 @@ body {
   
     margin-top: 50px;
     
-    #featurette-partner {
+    #featurette-location, #featurette-partner {
         
-        text-align: center;
-        
-        .featurette-heading {
-            margin-top: 50px;
-        }
+      text-align: center;
+      
+      .featurette-heading {
+          margin-top: 50px;
+      }
+    }
+
+    #featurette-partner {                
         
         .lead {
             margin-top: 20px;
