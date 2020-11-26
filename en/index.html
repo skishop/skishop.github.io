@@ -56,60 +56,53 @@ sitemap:
 <section id="contact" class="container">
     <h2>Find us, contact us, plan your itinerary</h2>
     
-    <div class="row">
+    <div class="schema" itemscope itemtype="http://schema.org/LocalBusiness">
 
-        <div class="col-md-5 schema" itemscope itemtype="http://schema.org/LocalBusiness">
+        <h2 itemprop="name"><a href="http://skishop-lelex.com" itemprop="url">Skishop Lélex</a></h2>
 
-            <h2 itemprop="name"><a href="http://skishop-lelex.com" itemprop="url">Skishop Lélex</a></h2>
+        <dl class="dl-horizontal">
+            <dt>Phone / Fax</dt>
+            <dd itemprop="telephone"><span class="glyphicon glyphicon-earphone"></span>+33&nbsp;(0)4&nbsp;50&nbsp;28&nbsp;88&nbsp;72
+            </dd>
+            <dd itemprop="faxNumber">+33&nbsp;(0)4&nbsp;50&nbsp;28&nbsp;88&nbsp;72</dd>
+        </dl>
 
-            <dl class="dl-horizontal">
-                <dt>Phone / Fax</dt>
-                <dd itemprop="telephone"><span class="glyphicon glyphicon-earphone"></span>+33&nbsp;(0)4&nbsp;50&nbsp;28&nbsp;88&nbsp;72
-                </dd>
-                <dd itemprop="faxNumber">+33&nbsp;(0)4&nbsp;50&nbsp;28&nbsp;88&nbsp;72</dd>
-            </dl>
+        <dl class="dl-horizontal">
+            <dt>Email</dt>
+            <dd itemprop="email"><a title="Envoyez un mail à l'équipe de SkiShop" class="email"
+                                    href="mailto:contact@skishop-lelex.com">contact@skishop-lelex.com</a></dd>
+        </dl>
 
-            <dl class="dl-horizontal">
-                <dt>Email</dt>
-                <dd itemprop="email"><a title="Envoyez un mail à l'équipe de SkiShop" class="email"
-                                        href="mailto:contact@skishop-lelex.com">contact@skishop-lelex.com</a></dd>
-            </dl>
+        <dl class="dl-horizontal">
+            <dt>Opening hours</dt>
+            <dd>
+                <time itemprop="openingHours" datetime="Mo-Su 08:30-19:30">Everyday from 8:30am to 7pm</time>
+            </dd>
+        </dl>
 
-            <dl class="dl-horizontal">
-                <dt>Opening hours</dt>
-                <dd>
-                    <time itemprop="openingHours" datetime="Mo-Su 08:30-19:30">Everyday from 8:30am to 7pm</time>
-                </dd>
-            </dl>
+        <dl class="dl-horizontal" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+            <dt>Address</dt>
+            <dd itemprop="streetAddress">Résidence Le Grand Crêt</dd>
+            <dd><span itemprop="postalCode">01410</span> <span itemprop="addressLocality">Lélex</span></dd>
+            <dd itemprop="addressCountry">France</dd>
+        </dl>
 
-            <dl class="dl-horizontal" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-                <dt>Address</dt>
-                <dd itemprop="streetAddress">Résidence Le Grand Crêt</dd>
-                <dd><span itemprop="postalCode">01410</span> <span itemprop="addressLocality">Lélex</span></dd>
-                <dd itemprop="addressCountry">France</dd>
-            </dl>
+        <dl class="dl-horizontal" itemprop="geo" itemscope itemtype="http://schema.org/GeoCoordinates">
+            <dt>GPS coordinates</dt>
+            <dd>+46°&nbsp;18'&nbsp;13.02"
+                <meta itemprop="latitude" content="46.303616"/>
+            </dd>
+            <dd>+5°&nbsp;56'&nbsp;32.60"
+                <meta itemprop="longitude" content="5.942390"/>
+            </dd>
+        </dl>
 
-            <dl class="dl-horizontal" itemprop="geo" itemscope itemtype="http://schema.org/GeoCoordinates">
-                <dt>GPS coordinates</dt>
-                <dd>+46°&nbsp;18'&nbsp;13.02"
-                    <meta itemprop="latitude" content="46.303616"/>
-                </dd>
-                <dd>+5°&nbsp;56'&nbsp;32.60"
-                    <meta itemprop="longitude" content="5.942390"/>
-                </dd>
-            </dl>
-
-            <dl class="dl-horizontal">
-                <dt>Social networks</dt>
-                <dd><a href="{{site.fb-page-url}}" target="_blank">Like-us on Facebook&nbsp;!</a></dd>
-                <dd><a href="{{site.google-url}}" target="_blank">Share-us on Google+&nbsp;!</a></dd>
-                <dd><a href="{{site.twitter-url}}" target="_blank">Follow-us on Twitter&nbsp;!</a></dd>
-            </dl>
-        </div>
-        
-        <div class="col-md-7">
-            <div id="map-canvas"></div>                        
-        </div>
-        
+        <dl class="dl-horizontal">
+            <dt>Social networks</dt>
+            <dd><a href="{{site.fb-page-url}}" target="_blank">Like-us on Facebook&nbsp;!</a></dd>
+            <dd><a href="{{site.google-url}}" target="_blank">Share-us on Google+&nbsp;!</a></dd>
+            <dd><a href="{{site.twitter-url}}" target="_blank">Follow-us on Twitter&nbsp;!</a></dd>
+        </dl>
     </div>
+               
 </section>
